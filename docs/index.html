@@ -11,7 +11,7 @@
     <!-- latex -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
     <!--网页标题左侧显示-->
-    <link rel="icon" href="http://www.wangshiyu.top/wp-content/uploads/2020/11/icon_slide_selected.png" type="image/x-icon" />
+    <link rel="icon" href="https://gitee.com/wang_shiyu_wsy/image-bed/raw/master/img/20201122194404.png" type="image/x-icon" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- CSS样式 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" />
@@ -35,7 +35,6 @@
         coverpage: true,
         onlyCover: true,
         // 显示文档更新日期
-        formatUpdated: "{MM}/{DD} {HH}:{mm}",
         auto2top: true,
         // 生成目录
         // loadSidebar: true,
@@ -66,6 +65,16 @@
         "flexible-alerts": {
           style: "flat",
         },
+        // 最后修改日期
+        formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}",
+        plugins: [
+          function (hook, vm) {
+            hook.beforeEach(function (html) {
+              var url = "https://github.com/wugenqiang/CS-Notes/tree/master/" + vm.route.file;
+              return html + "\n----\n" + "!> 最后修改于 {docsify-updated} ";
+            });
+          },
+        ],
       };
     </script>
 
@@ -89,20 +98,20 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs/components/matlab.min.js"></script>
 
     <!-- 返回顶部 -->
-    <a class="to-top"></a>
+    <a class="cd-top faa-float animated"></a>
+
     <!-- 置顶插件 -->
     <script src="style/jquery-1.11.3.min.js"></script>
     <script src="style/jquery.toTop.min.js"></script>
     <script src="style/Texiao.js"></script>
     <script>
-      $(".to-top").toTop();
+      $(".cd-top").toTop();
     </script>
 
     <!-- CDN files for docsify-katex -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-    <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+    <scrip src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></scrip>
+    <scrip src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></scrip>
   </body>
 </html>
