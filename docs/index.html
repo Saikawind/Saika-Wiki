@@ -19,25 +19,28 @@
   </head>
   <body>
     <nav>
-      <a href="#/">Saika-wiki</a>
+      <a href="#/">Saika Wiki</a>
       <a href="https://www.wangshiyu.top/" target="_blank">Saika's Blog</a>
     </nav>
     <div id="app">🏃‍🏃‍🏃‍💨加载中</div>
+
     <script>
       window.$docsify = {
-        name: "Saika-wiki",
+        name: "Saika Wiki",
+        nameLink: "#/README",
         repo: "https://github.com/Saikawind/Saika-Wiki",
         themeColor: "rgb(102, 126, 233)",
-        topMargin: 140,
+        // topMargin: 140,
         // 封面
         coverpage: true,
         onlyCover: true,
-        //
+        // 显示文档更新日期
+        formatUpdated: "{MM}/{DD} {HH}:{mm}",
         auto2top: true,
         // 生成目录
-        loadSidebar: true,
+        // loadSidebar: true,
         // 标题目录渲染层数
-        maxLevel: 4,
+        // maxLevel: 2,
         // 全文搜索
         search: {
           paths: "auto",
@@ -88,16 +91,18 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/matlab.min.js"></script>
 
+    <!-- 返回顶部 -->
+    <a class="to-top"></a>
     <!-- 置顶插件 -->
     <script src="style/jquery-1.11.3.min.js"></script>
     <script src="style/jquery.toTop.min.js"></script>
+    <script src="style/Texiao.js"></script>
     <script>
       $(".to-top").toTop();
     </script>
 
     <!-- CDN files for docsify-katex -->
     <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-
     <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
   </body>
 </html>
