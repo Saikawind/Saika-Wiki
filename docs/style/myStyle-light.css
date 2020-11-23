@@ -49,16 +49,19 @@ section.cover .cover-main {
 } */
 /* 内容居中和宽度 */
 .content {
-  width: 1000px;
+  max-width: 950px;
+  width: 99%;
   padding-top: 70px !important;
+  padding-left: 5%;
 }
 /* 内容区域的字体颜色和背景 */
 .markdown-section {
   /* background:rgb(247, 247, 247); */
   /* color: rgb(184, 191, 198); */
+
   color: black;
   max-width: 90% !important;
-  padding: 30px 30px 40px 30px !important;
+  padding: 30px 0px 18px 0px !important;
   border-radius: 20px;
 }
 /* 行代码块 */
@@ -114,6 +117,7 @@ section.cover .cover-main {
 /* 侧边栏和内容分界线 */
 .sidebar {
   border-right: 1px solid rgb(247, 247, 247);
+  width: 240px;
 }
 
 /* .sidebar-toggle{

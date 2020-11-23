@@ -13,14 +13,7 @@
       border-radius:5px;
       box-shadow: 2px 2px 5px rgb(216, 216, 216);
     }
-    /* .content{
-      width:1000px;
-      margin: 0 auto;
-      padding-top: 30px;
-    } */
-    .markdown-section{
-      padding: 30px 30px 40px 30px !important;
-    }
+
 </style>
 
 - 🎓 本仓库用于记录学习过程中的所思所想，并力图构建一个完善的知识体系，便于复习巩固
